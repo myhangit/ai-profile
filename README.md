@@ -44,8 +44,9 @@ pwsh -File C:\Users\Administrator\DoubaoWork\chats\2026-11-21\new-chat\ai-profil
 能建软链接就建软链接（改一处全部生效），没有权限会自动改成复制，改动后重跑一次即可。
 
 3. Cursor 个人规则只支持粘贴：Cursor 设置 > Rules > User Rules，把 `AGENTS.md` 内容粘进去一次。
-4. 某个项目想要规则说明，把 `project-kit/` 里的文件拷到项目根目录。
-5. 换电脑：先 clone，再跑 `sync.ps1`。
+4. 做界面时按第 6 节先去按钮实验室挑候选：https://www.workbuddy.link/p/aRPPbjUa93gMYFOzpzEV97?source=2
+5. 某个项目想要规则说明，把 `project-kit/` 里的文件拷到项目根目录。
+6. 换电脑：先 clone，再跑 `sync.ps1`。
 
 ```powershell
 git clone https://github.com/myhangit/ai-profile.git

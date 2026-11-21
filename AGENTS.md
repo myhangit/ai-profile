@@ -74,7 +74,33 @@
 
 交付前：截图，对照上面逐条打勾，把没做到的列给我。
 
-## 6. 代码风格
+## 6. 交互组件选型：去我的「按钮实验室」挑，让我选
+
+任务涉及**按钮 / 手势 / 点赞 / 加载内容 / 视觉特效**，就不要自己拍一个方案。先看菜单，列候选给我选。
+
+- 入口：https://www.workbuddy.link/p/aRPPbjUa93gMYFOzpzEV97?source=2
+- 抓页面源码（读提示词用这个，浏览器直接开会被拦）：https://workbuddy-space-static.codebuddy.work/page/aRPPbjUa93gMYFOzpzEV97/3l5crcdY99oe/index.html
+
+六个分类（网页锚点）：
+
+- `#motion` 按钮动效：悬停浮起 Hover Lift、按压缩放 Press Scale、加载状态 Loading、发光呼吸 Glow Pulse、渐变流光 Shimmer、描边滑入 Fill Sweep、图标旋转 Icon Spin、波纹点击 Ripple
+- `#function` 按钮功能：开关切换 Toggle、果冻开关 JellyToggle、分段选择 Segmented、提交反馈 Success、提交三段变化 SubmitMorph、长按确认 HoldtoConfirm、图标按钮组 Actions
+- `#like` 点赞：点赞计数 Like、点赞爆发 Like Burst
+- `#gesture` 手势：下拉刷新 PullToRefresh、左滑删除 SwipeToDelete、卡片左右滑 SwipeCards、拖拽排序 DragtoReorder
+- `#loading` 加载内容：信息流骨架屏、照片墙渐进式加载、商品列下拉加载
+- `#visual` 视觉特效：环形轮播 Circular Carousel、渐变收成卡 Gradient to Card、镜头放大 Lens
+
+流程：
+
+1. 先定位到对应分类，翻一遍这一组有什么。
+2. 给我列 2–4 个候选，编号，每个写：中文名 + 一句话说清「什么时候动、动多少、多久」+ 适合什么场景。能截到效果就贴图。
+3. 停下等我选编号。不要默认替我做决定，也不要一轮里把几个都做上。
+4. 选定后按它的参数实现；卡片上的「提示词 ↗」里有关键数值，读到再用，别凭印象编。
+5. 这一组里没有合适的，直说没有，再给一个替代方案让我定。
+
+和第 5 节的关系：动效参数沿用实验室的，但第 5 节的视觉禁令照样管用——示例页的配色不要整段照搬，只借动效与交互逻辑。
+
+## 7. 代码风格
 
 通用
 
@@ -96,7 +122,7 @@ Python
 - Python 3.11+；路径统一用 pathlib；命令行参数用 argparse。
 - 一个脚本一个职责，能 `python x.py` 直接跑。
 
-## 7. 交付标准
+## 8. 交付标准
 
 - 改完代码要给出「怎么验证」的一条命令，并说明预期输出。
 - 涉及界面时，交付前自己截图，对照第 5 节逐条打勾，把没做到的列给我。
@@ -104,18 +130,18 @@ Python
 - 文件名要人类能看懂，不要 uuid、时间戳堆叠。
 - 长内容给文件，不要刷屏；短内容直接回复。
 
-## 8. Git 与提交
+## 9. Git 与提交
 
 - 提交信息用 Conventional Commits：`feat: 加导出按钮`、`fix: 修复空数据报错`，描述用中文。
 - 一次提交只做一件事。
 - 不要自动 push、不要 force push、不要改我已有的提交历史。
 
-## 9. 文档
+## 10. 文档
 
 - README 用中文，开头三行说清「这是什么、怎么跑、需要什么」。
 - 给你的说明不要「首先/其次/最后」作文腔，用短列表。
 
-## 10. 优先级
+## 11. 优先级
 
 当前对话里的明确指令 > 第 3 节数据安全红线 > 项目内 AGENTS.md > 本文件其余规则。
 冲突时听更具体的那个，并告诉我一声。
