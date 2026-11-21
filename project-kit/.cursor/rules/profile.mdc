@@ -1,0 +1,9 @@
+---
+description: 个人编码风格与协作约定
+alwaysApply: true
+---
+
+本项目遵循仓库根目录的 `AGENTS.md`，以及个人 AI 档案：
+https://raw.githubusercontent.com/myhangit/ai-profile/main/AGENTS.md
+
+动手前先读取，按其中的风格、禁令与交付标准执行。
